@@ -10,4 +10,5 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<Users,Integer> {
     //select * user where email and password
     List<Users> findByEmailAndPassword(String email,String password);
+    Users findByEmail(String email);
 }

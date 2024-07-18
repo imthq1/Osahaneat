@@ -10,4 +10,6 @@ public interface LoginServiceImp {
 
      boolean checkLogin(String email, String password);
      boolean addUser(SignUpRequest signUpRequest);
+
+
 }
