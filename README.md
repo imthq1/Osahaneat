@@ -11,6 +11,7 @@ OsahanEat Food Backend API là hệ thống backend cho ứng dụng đặt đ�
 - JSON Web Tokens (JWT)
 - MySQL
 - Maven
+- ...............
 
 ## Cài đặt
 1. Clone repository:
