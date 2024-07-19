@@ -4,9 +4,17 @@ public class ResponseDate {
     private int status=200;
     private String desc;
     private Object data;
-
+    private boolean isSuccess=true;
     public int getStatus() {
         return status;
+    }
+
+    public boolean isSuccess() {
+        return isSuccess;
+    }
+
+    public void setSuccess(boolean success) {
+        isSuccess = success;
     }
 
     public void setStatus(int status) {
