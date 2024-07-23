@@ -62,6 +62,7 @@ CustomUserDetailService customUserDetailService;
         http
                 .cors(cors -> cors.disable())
                 .csrf(AbstractHttpConfigurer::disable)
+                //khong su dung session trong security
                 .sessionManagement(session ->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
 
@@ -71,7 +72,7 @@ CustomUserDetailService customUserDetailService;
                         .requestMatchers("/login/**").permitAll() // Khong can chung thuc
                         .anyRequest().authenticated()
                 );
- //
+            //add filter
         http.addFilterBefore(customJwtFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
 

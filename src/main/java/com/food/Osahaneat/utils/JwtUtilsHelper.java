@@ -22,6 +22,7 @@ public class JwtUtilsHelper {
 
     public String generateJwtToken(String data) {
         SecretKey key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(privateKey));
+        //giai ma key ra token
         String jws = Jwts.builder().subject(data).signWith(key).compact();
         return jws ;
     }
