@@ -12,8 +12,15 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
+  servlet:
+    multipart:
+      max-file-size: 10MB
 
 server:
   port: 8090
 jwt:
   privateKey: pRVHWu5eJfLzyM8g2zxq61X0Rk0jJhnt8iWy5jXyvgQ=
+
+
+fileUpload:
+  rootPath: C:\Users\xamth\OneDrive\Máy tính\uploads

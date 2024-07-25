@@ -69,7 +69,7 @@ CustomUserDetailService customUserDetailService;
                 //Chung thuc link
 //                .authorizeHttpRequests((requests)->requests.requestMatchers("/"))
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/login/**").permitAll() // Khong can chung thuc
+                        .requestMatchers("/login/**","/restaurant/file/**").permitAll() // Khong can chung thuc
                         .anyRequest().authenticated()
                 );
             //add filter
